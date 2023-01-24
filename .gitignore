@@ -3,6 +3,7 @@
 # compiled output
 dist
 tmp
+/build
 /out-tsc
 
 # dependencies
@@ -18,11 +19,7 @@ node_modules
 *.sublime-workspace
 
 # IDE - VSCode
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
+.vscode
 
 # misc
 /.sass-cache
@@ -37,3 +34,12 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# next.js
+.next/
+out/
+next-env.d.ts
+
+# env
+.env
+.env*.local
