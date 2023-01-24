@@ -1,5 +1,5 @@
 {
-  "name": "@akacords-frontend/service",
+  "name": "@akacords-frontend/admin",
   "version": "0.0.0",
   "private": true,
   "scripts": {
