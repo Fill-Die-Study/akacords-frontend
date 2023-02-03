@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import LoginNextButton from '@components/LoginNextButton';
+import Link from 'next/link';
 import RegisterImage from './register-image.png';
 
 export default function RegisterPage() {
@@ -37,8 +38,9 @@ export default function RegisterPage() {
             </div>
           </div>
           <LoginNextButton className="mt-14 bg-gray-100 text-gray-400">다음 단계로</LoginNextButton>
-            다음 단계로
-          <p className="text-sm text-gray-600 flex justify-end mt-2">로그인으로 이동</p>
+          <Link href="/login">
+            <p className="text-sm text-gray-600 flex justify-end mt-2">로그인으로 이동</p>
+          </Link>
         </div>
       </div>
     </div>
