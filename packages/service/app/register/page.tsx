@@ -13,9 +13,13 @@ export default function RegisterPage() {
           <h1 className="text-3xl font-bold">정보 입력! 🚀</h1>
           <p className="text-gray-400 text-lg font-semibold">당신의 정보를 적어주세요!</p>
           <div className="mt-12 space-y-5">
-            <input type="text" placeholder="비밀번호" className="w-80 h-14 px-5 border-2 border-gray-200 rounded-lg" />
             <input
-              type="text"
+              type="password"
+              placeholder="비밀번호"
+              className="w-80 h-14 px-5 border-2 border-gray-200 rounded-lg"
+            />
+            <input
+              type="password"
               placeholder="비밀번호 확인"
               className="w-80 h-14 px-5 border-2 border-gray-200 rounded-lg"
             />
