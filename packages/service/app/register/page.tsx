@@ -30,14 +30,18 @@ export default function RegisterPage() {
               <input type="checkbox" className="border border-gray-100" />
               <span className="text-sm text-gray-500 leading-tight">
                 &nbsp;<span className="font-bold">[필수]</span> 서비스 약관에 동의합니다.{' '}
-                <span className="underline">내용보기</span>
+                <a href="/termofservice" target="_blank" rel="noreferrer">
+                  <span className="underline">내용보기</span>
+                </a>
               </span>
             </div>
             <div>
               <input type="checkbox" className="border border-gray-100" />
               <span className="text-sm text-gray-500 leading-tight">
                 &nbsp;<span className="font-bold">[필수]</span> 개인정보 수집 및 이용에 동의합니다.{' '}
-                <span className="underline">내용보기</span>
+                <a href="/privacy" target="_blank" rel="noreferrer">
+                  <span className="underline">내용보기</span>
+                </a>
               </span>
             </div>
           </div>
