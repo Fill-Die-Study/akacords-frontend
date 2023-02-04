@@ -6,6 +6,7 @@ import Link from 'next/link';
 import * as yup from 'yup';
 import { SubmitHandler, useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
+import { RegisterStep } from '@app/register/page';
 
 const schema = yup
   .object({
@@ -33,7 +34,11 @@ interface InputSectionFormInput {
   readonly privacyCheck: boolean;
 }
 
-export default function InputSection() {
+interface InputSectionProps {
+  readonly setStep: React.Dispatch<React.SetStateAction<RegisterStep>>;
+}
+
+export default function InputSection({ setStep }: InputSectionProps) {
   const {
     register,
     handleSubmit,
@@ -44,7 +49,8 @@ export default function InputSection() {
 
   const onNextClick: SubmitHandler<InputSectionFormInput> = async (values) => {
     console.log(values);
-    // TODO: 회원가입 완료 처리
+    setStep(RegisterStep.DONE);
+    // TODO: 회원가입 API 호출
   };
 
   return (
