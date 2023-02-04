@@ -36,26 +36,31 @@ export default function VerifyEmailSection({ setStep }: VerifyEmailSectionProps)
   }, [setStep]);
 
   return (
-    <div className="flex flex-col justify-center px-10 py-26 mr-16">
-      <h1 className="text-3xl font-bold">이메일 인증🔑</h1>
-      <p className="text-gray-400 text-lg font-semibold">이메일 입력하면 인증 메일이 날라와요!</p>
+    <div className="flex flex-col justify-between pl-[2.6rem] pr-[4rem] pt-[6.5rem] pb-[3.75rem]">
+      <div>
+        <h1 className="text-3xl font-bold">이메일 인증🔑</h1>
+        <p className="text-gray-400 text-lg font-semibold">이메일 입력하면 인증 메일이 날라와요!</p>
 
-      <div className="mt-12 space-y-5">
-        <input
-          type="email"
-          placeholder="이메일"
-          className="w-80 h-14 px-5 border-2 border-gray-200 rounded-lg"
-          {...register('email')}
-        />
-        <span className="text-red-400 text-sm">{errors.email?.message}</span>
+        <div className="mt-[3.8rem] space-y-5">
+          <input
+            type="email"
+            placeholder="이메일"
+            className="w-80 h-14 px-5 border-2 border-gray-200 rounded-lg"
+            {...register('email')}
+          />
+          <br />
+          <span className="text-red-400 text-sm">{errors.email?.message}</span>
+        </div>
       </div>
 
-      <LoginNextButton className="mt-14 bg-gray-100 text-gray-400 " onClick={handleSubmit(onButtonClick)}>
-        이메일 인증
-      </LoginNextButton>
-      <Link href="/login">
-        <p className="text-sm text-gray-600 flex justify-end mt-2">로그인으로 이동</p>
-      </Link>
+      <div>
+        <LoginNextButton className="bg-gray-100 text-gray-400 " onClick={handleSubmit(onButtonClick)}>
+          이메일 인증
+        </LoginNextButton>
+        <Link href="/login">
+          <p className="text-sm text-gray-600 flex justify-end mt-2">로그인으로 이동</p>
+        </Link>
+      </div>
     </div>
   );
 }
