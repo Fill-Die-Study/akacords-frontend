@@ -23,6 +23,10 @@ module.exports = {
     'import/extensions': 'off',
     'import/no-unresolved': 'off',
     'import/no-extraneous-dependencies': 'off',
-    'prettier/prettier': ['error', { endOfLine: 'auto' }]
+    'prettier/prettier': ['error', { endOfLine: 'auto' }],
+
+    // For enum type
+    'no-shadow': 'off',
+    '@typescript-eslint/no-shadow': ['error']
   }
 };
