@@ -2,7 +2,10 @@
   "name": "akacords-frontend",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+	"build:ui": "nx build @akacords-frontend/ui",
+	"build": "yarn build:ui"
+  },
   "private": true,
   "dependencies": {
     "autoprefixer": "^10.4.13",
