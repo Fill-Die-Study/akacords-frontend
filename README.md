@@ -1,4 +1,4 @@
-# akacords-frontend
+# akacords-frontend [![CodeFactor](https://www.codefactor.io/repository/github/fill-die-study/akacords-frontend/badge/develop)](https://www.codefactor.io/repository/github/fill-die-study/akacords-frontend/overview/develop)
 
 > Akacords is study service (like Inflearn, Class101)
 
