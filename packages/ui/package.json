@@ -6,11 +6,11 @@
     "dist"
   ],
   "main": "./dist/build.umd.cjs",
-  "module": "./dist/build.js",
+  "module": "./dist/build.es.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/build.js",
+      "import": "./dist/build.es.js",
       "require": "./dist/build.umd.cjs"
     }
   },
