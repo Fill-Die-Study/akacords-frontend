@@ -29,5 +29,8 @@ export default defineConfig({
       insertTypesEntry: true
     }),
     tsconfigPaths()
-  ]
+  ],
+  resolve: {
+    alias: [{ find: '@src', replacement: resolve(__dirname, 'src') }]
+  }
 });
