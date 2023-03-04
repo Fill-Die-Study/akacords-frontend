@@ -25,14 +25,11 @@ export default function LoginPage() {
     formState: { errors, isDirty }
   } = useForm<LoginInput>({ resolver: yupResolver(loginSchema), defaultValues: { email: '', password: '' } });
 
-  const onSubmit: SubmitHandler<LoginInput> = useCallback(
-    (formData) => {
-      // TODO: api call
-      // alert(JSON.stringify(formData));
-      reset();
-    },
-    [reset]
-  );
+  const onSubmit: SubmitHandler<LoginInput> = useCallback(() => {
+    // TODO: api call
+    // alert(JSON.stringify(formData));
+    reset();
+  }, [reset]);
 
   return (
     <div>
