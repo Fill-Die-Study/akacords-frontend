@@ -28,7 +28,7 @@ export default function LoginPage() {
   const onSubmit: SubmitHandler<LoginInput> = useCallback(
     (formData) => {
       // TODO: api call
-      alert(JSON.stringify(formData));
+      // alert(JSON.stringify(formData));
       reset();
     },
     [reset]
