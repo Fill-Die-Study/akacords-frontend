@@ -1,14 +1,16 @@
 'use client';
 
 import React, { useEffect, useRef, useState } from 'react';
+import { InputBorderColorMap, InputStatus, LabelTextColorMap } from '@src/components/Input/constant';
 
 export interface InputProps {
   value: string;
   label: string;
   placeholder: string;
+  status?: InputStatus;
 }
 
-export function Input({ value, label, placeholder }: InputProps) {
+export function Input({ value, label, placeholder, status = InputStatus.DEFAULT }: InputProps) {
   const inputRef = useRef<HTMLInputElement | null>(null);
   const [isInputFocused, setInputFocused] = useState<boolean>(false);
 
@@ -23,7 +25,9 @@ export function Input({ value, label, placeholder }: InputProps) {
   }, [isInputFocused, placeholder, label]);
 
   return (
-    <div className="relative w-[348px] p-[14px_13px] flex items-center gap-[10px] border border-[#C4C6CC] rounded-[8px] bg-white focus-within:border-black">
+    <div
+      className={`relative w-[348px] p-[14px_13px] flex items-center gap-[10px] border border-[#C4C6CC] rounded-[8px] bg-white ${InputBorderColorMap[status]}`}
+    >
       <input
         ref={inputRef}
         onFocus={() => setInputFocused(true)}
@@ -33,7 +37,9 @@ export function Input({ value, label, placeholder }: InputProps) {
         placeholder={placeholder}
         value={value}
       />
-      <span className="hidden absolute h-[14px] text-[12px] mt-[-15%] bg-white px-1 text-[#AAADB3] peer-focus:text-black peer-focus:inline peer-[:not(:placeholder-shown)]:inline">
+      <span
+        className={`hidden absolute h-[14px] text-[12px] mt-[-15%] bg-white px-1 text-[#AAADB3] ${LabelTextColorMap[status]} peer-focus:inline peer-[:not(:placeholder-shown)]:inline`}
+      >
         {label}
       </span>
     </div>
