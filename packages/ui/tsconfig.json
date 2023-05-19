@@ -1,11 +1,10 @@
 {
-  "extends": "../../tsconfig.base.json",
+  "extends": "@akacords-frontend/tsconfig/base.json",
+  "include": ["src"],
   "compilerOptions": {
-	"jsx": "react",
-	"baseUrl": "./",
-	"paths": {
-	  "@src/*": ["./src/*"]
-	}
-  },
-  "include": ["src"]
+    "baseUrl": "./",
+    "paths": {
+      "@src/*": ["./src/*"]
+    }
+  }
 }

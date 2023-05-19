@@ -1,0 +1,17 @@
+{
+  "extends": "@akacords-frontend/tsconfig/nextjs.json",
+  "compilerOptions": {
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "baseUrl": "./",
+    "paths": {
+      "@app/*": ["./app/*"],
+      "@components/*": ["./components/*"],
+      "@styles/*": ["./styles/*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"]
+}
