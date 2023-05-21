@@ -15,7 +15,6 @@
     }
   },
   "scripts": {
-    "build": "vite build",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
@@ -25,6 +24,9 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@akacords-frontend/tailwind-config": "*",
+    "@akacords-frontend/tsconfig": "*",
+    "eslint-config-custom": "*",
     "@babel/core": "^7.21.0",
     "@storybook/addon-actions": "^6.5.16",
     "@storybook/addon-essentials": "^6.5.16",

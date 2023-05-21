@@ -1,5 +1,2 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  // eslint-disable-next-line global-require
-  presets: [require('../../tailwind.config')]
-};
+module.exports = require('@akacords-frontend/tailwind-config/tailwind.config.js');

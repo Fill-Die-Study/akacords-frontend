@@ -7,11 +7,6 @@ import InputSection from '@app/register/InputSection';
 import DoneSection from '@app/register/DoneSection';
 import RegisterImage from './register-image.png';
 
-export enum RegisterStep {
-  VERIFY_EMAIL,
-  OTHER_INPUT,
-  DONE
-}
 export default function RegisterPage() {
   const [step, setStep] = useState<RegisterStep>(RegisterStep.VERIFY_EMAIL);
 
