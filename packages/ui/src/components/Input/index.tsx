@@ -1,5 +1,3 @@
-'use client';
-
 import React, { useEffect, useRef, useState } from 'react';
 import { InputBorderColorMap, InputStatus, LabelTextColorMap } from '@src/components/Input/constant';
 
