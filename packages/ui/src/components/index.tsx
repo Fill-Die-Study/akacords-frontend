@@ -1,2 +1,2 @@
-export * from '@src/components/Input';
-export * from '@src/components/NavigationBar';
+export * from './Input';
+export * from './NavigationBar';
