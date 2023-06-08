@@ -19,7 +19,9 @@
     "build": "vite build",
     "build:storybook": "build-storybook"
   },
-  "dependencies": {},
+  "dependencies": {
+    "iconsax-react": "^0.0.8"
+  },
   "peerDependencies": {
     "react": "18.2.0",
     "react-dom": "18.2.0"
