@@ -1,6 +1,6 @@
 import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
-import { NavColumn, NavContainer, NavItem, NavText } from '@src/components';
+import { NavColumn, NavContainer, NavItem, NavText } from '@src/components/NavigationBar';
 import { Notification, SearchNormal } from 'iconsax-react';
 
 export default {
@@ -34,12 +34,7 @@ const ProfileTemplate: ComponentStory<typeof NavContainer> = (args) => {
         <NavItem>
           <Notification size={18} color="black" />
         </NavItem>
-        <NavItem>
-          <div className="flex items-center">
-            <img src="https://via.placeholder.com/40" alt="profile" className="rounded-full mr-[16px]" />
-            <p>닉네임</p>
-          </div>
-        </NavItem>
+        <NavItem>닉네임</NavItem>
       </NavColumn>
     </NavContainer>
   );
