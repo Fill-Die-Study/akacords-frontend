@@ -14,7 +14,7 @@ export default defineConfig({
       fileName: (format) => `build.${format}.js`
     },
     rollupOptions: {
-      external: ['React', 'react-dom'],
+      external: ['react', 'react-dom'],
       output: {
         globals: {
           react: 'React',
