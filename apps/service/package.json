@@ -20,13 +20,13 @@
     "yup": "^0.32.11"
   },
   "devDependencies": {
-    "@akacords-frontend/tsconfig": "*",
     "@akacords-frontend/tailwind-config": "*",
+    "@akacords-frontend/tsconfig": "*",
     "@tailwindcss/line-clamp": "^0.4.2",
     "@types/node": "18.11.18",
     "@types/react": "18.0.26",
     "@types/react-dom": "18.0.10",
-    "typescript": "~4.9.4",
-    "eslint-config-custom": "*"
+    "eslint-config-custom": "*",
+    "typescript": "~4.9.4"
   }
 }

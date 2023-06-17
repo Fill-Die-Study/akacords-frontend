@@ -6,6 +6,7 @@ import Link from 'next/link';
 import * as yup from 'yup';
 import { SubmitHandler, useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
+import RegisterStep from '@app/register/type';
 
 const schema = yup
   .object({

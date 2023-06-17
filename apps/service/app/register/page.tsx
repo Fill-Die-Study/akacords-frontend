@@ -5,6 +5,7 @@ import Image from 'next/image';
 import VerifyEmailSection from '@app/register/VerifyEmailSection';
 import InputSection from '@app/register/InputSection';
 import DoneSection from '@app/register/DoneSection';
+import RegisterStep from '@app/register/type';
 import RegisterImage from './register-image.png';
 
 export default function RegisterPage() {
