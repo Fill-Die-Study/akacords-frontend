@@ -8,7 +8,7 @@ export default {
 
 const DefaultNotification: ComponentStory<typeof NotificationContainer> = (args) => {
   return (
-    <NotificationContainer>
+    <NotificationContainer {...args}>
       <NotificationItem title="제목" body="내용" />
       <NotificationItem
         title="제목2"
@@ -20,7 +20,7 @@ const DefaultNotification: ComponentStory<typeof NotificationContainer> = (args)
 
 const EmptyNotification: ComponentStory<typeof NotificationContainer> = (args) => {
   return (
-    <NotificationContainer>
+    <NotificationContainer {...args}>
       <NotificationEmptyItem />
     </NotificationContainer>
   );
