@@ -9,7 +9,7 @@ interface NotificationItemProps {
 export function NotificationItem({ title, body, onClick }: NotificationItemProps) {
   return (
     <div
-      className="w-56 h-[60px] p-2 rounded-[7px] cursor-pointer hover:bg-[#F2F4F7]"
+      className="w-56 min-h-[60px] p-2 rounded-[7px] cursor-pointer hover:bg-[#F2F4F7]"
       onClick={onClick}
       role="presentation"
     >
