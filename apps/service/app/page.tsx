@@ -1,3 +1,5 @@
+'use client';
+
 import Link from 'next/link';
 import React from 'react';
 import { NavColumn, NavContainer, NavItem, NavText } from '@akacords-frontend/ui';
