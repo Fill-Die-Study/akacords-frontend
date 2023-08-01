@@ -1,5 +1,3 @@
-'use client';
-
 import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { NavColumn, NavContainer, NavItem, NavText } from '@src/components/NavigationBar';
